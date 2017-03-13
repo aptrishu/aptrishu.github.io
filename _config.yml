@@ -55,8 +55,7 @@ type-speed: 10
 start-delay: 230
 delete-delay: 2000
 lines: # You can add HTML Tags in the Text
-  - text: "Bhaag bhosdike yahaan se.."
-  - text: "Avi tak yahin h ? teri.."
+  - text: "Hey there.."
 
 me-img: "/img/jetpacktocat.png"
 
