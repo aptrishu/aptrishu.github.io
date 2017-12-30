@@ -6,7 +6,7 @@ about: Machine Learning Engineer (wanna be)..
 disqus_shortname: rishavjha-me
 google_analytics: UA-XXXXXXXX-Y
 avatar_url: /static/img/avatar.jpg
-plugins: ['jekyll-twitter-plugin']
+
 
 enableTags: true
 tagarray: []
@@ -49,6 +49,7 @@ markdown: kramdown
 gems:
   - jekyll-paginate
   - jekyll-gist
+  plugins: ['jekyll-twitter-plugin']
 
 compress_html:
   clippings: all
