@@ -85,6 +85,10 @@ layout: compress
       <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
     {% endif %}
 
+    {% plugin_type twitter_url *options %}
+
+    {% twitter https://twitter.com/aptrishu maxwidth=500 limit=5 %}
+
     <!-- Font awesome icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <!-- syntax highlighting CSS -->
