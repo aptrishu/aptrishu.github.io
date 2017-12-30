@@ -35,6 +35,8 @@ share:
 urls:
     - text: About Me
       url: /about/
+    - text: google
+      url: /google8f1594e1dca12401.html
     - text: My Projects
       url: /projects/
     - text: XML Feed
@@ -46,6 +48,7 @@ paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
 markdown: kramdown
+plugins_dir: ['jekyll-twitter-plugin']
 gems:
   - jekyll-paginate
   - jekyll-gist
