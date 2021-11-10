@@ -1,6 +1,5 @@
 # Setup
 # Dependencies
-markdown:         redcarpet
 pygments:         true
 
 # Permalinks
