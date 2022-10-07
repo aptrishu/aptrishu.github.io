@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }} - Rishav's Blog</title>
+   <meta name="author" content="Rishav" />
 
-{% include head.html %}
-{% include google_analytics.html %}
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
+</head>
 <body>
 
-<div class="container content">
-  <div class="masthead">
-    <h3 class="masthead-title">
-      <a href="/" title="Home">{{ site.title }}</a>
-
-      {% for page in site.pages_list %}
-      &nbsp;&nbsp;&nbsp;<small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-      {% endfor %}
-
-    </h3>
+<div class="site">
+  <div class="title">
+    <h1><a href="/">Rishav's Blog</a></h1>
   </div>
 
+  <div class="about">
+    <h1>About Me</h1>
+    My name is Rishav. I like to build things that work.<br/><br/>
+
+    I'm currently an engineer at Amazon in Bangalore, where I work on distributed systems.<br/>
+
+All opinions are my own.
+    <h1>Links</h1>
+    <a href="https://medium.com/@aptrishu">My Posts on Medium</a><br/>
+    <a href="https://twitter.com/aptrishu">@aptrishu on Twitter</a>
+  </div>
+
+  
   {{ content }}
-
-  {% include comments.html %}
-
+  
   <div class="footer">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
+    <div class="contact">
+      <p>
+        Rishav<br />
+        The opinions on this site are my own. They do not necessarily represent those of my employer.<br />
+        code.rishus23@gmail.com
+      </p>
+      <p>
+	<a href="https://rishav.blog/rss.xml"><img src="/images/feed-icon-14x14.png" /> RSS</a>
+	<a href="https://rishav.blog/atom.xml"><img src="/images/feed-icon-14x14.png" /> Atom</a>
+      </p>
+    </div>
+    <div class="license">
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </div>
   </div>
 </div>
 

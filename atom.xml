@@ -1,28 +1,27 @@
 ---
-layout: null
+layout: nil
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
- <title>{{ site.title }}</title>
- <link href="{{ '/atom.xml' | relative_url }}" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
+ 
+ <title>Rishav's Blog</title>
+ <link href="http://rishav.blog/atom.xml" rel="self"/>
+ <link href="http://rishav.blog/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <id>http://rishav.blog/</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>Rishav</name>
+   <email>code.rishus23@gmail.com</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
-   <title>{{ post.title | xml_escape }}</title>
-   <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
+   <title>{{ post.title }}</title>
+   <link href="http://rishav.blog{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
+   <id>http://rishav.blog{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
-
+ 
 </feed>
