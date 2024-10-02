@@ -2,8 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Rishav's Blog</title>
- <link href="http://aptrishu.github.io/atom.xml" rel="self"/>
- <link href="http://aptrishu.github.io/"/>
+ <link href="http://aptrishu.github.io/" rel="alternate"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://aptrishu.github.io/</id>
  <author>

@@ -1,3 +1,5 @@
 markdown: kramdown
 pygments: false
 baseurl: ""
+plugins:
+  - jekyll-feed
