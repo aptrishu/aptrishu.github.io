@@ -156,7 +156,7 @@ ul.pubs span {
     font-size: 80%;
     color: #555;
     border-top: 4px solid #eee;
-    margin-top: 2em;
+    margin-top: auto;
     overflow: hidden;
     clear: both;
 }
@@ -186,6 +186,7 @@ ul.pubs span {
     width: 20em;
     float: right;
     color: #555;
+    padding-bottom: 12em;
 }
 
 .site .about h1 {
